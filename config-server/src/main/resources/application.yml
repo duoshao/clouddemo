@@ -1,0 +1,35 @@
+#服务端口号
+server:
+  port: 8500
+#定义服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: config-server
+  #Spring Cloud Config Server端配置
+  cloud:
+    config:
+      server:
+        git:
+          #远程存储库的URI地址。
+          uri: https://gitee.com/xiadd/cloundconfig
+          #使用远程Git仓库验证用户名。
+          username: 307062817@qq.com
+          #使用远程Git仓库验证密码。
+          password: Gitee,.123
+          #指定远程Git仓库的分支
+          default-label: master
+          #指定本地仓库地址用来存储获取远程Git上的配置文件
+          basedir: G:\temp\path\config-properties
+          #git仓库地址下的相对地址，可以配置多个，用，分割，也就是配置文件所在根目录文件夹名称
+          search-paths: repo
+      #标记以指示启用配置服务器发现（配置服务器URL将通过发现查找）。
+      discovery:
+        enabled: true
+eureka:
+  instance:
+    #Eureka注册中心ip地址
+    hostname: 127.0.0.1
+  client:
+    serviceUrl:
+      #注册地址
+      defaultZone: http://${eureka.instance.hostname}:8000/eureka/

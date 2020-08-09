@@ -1,10 +1,18 @@
-### 用户服务
-server:
-  port: 8200
 ###服务别名----服务注册到注册中心名称
 spring:
   application:
     name: service-order
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: dev   #profile对应config server所获取的配置文件中的{profile}
+      label: master  #指定Git仓库的分支，对应config server所获取的配置文件的{label}
+      discovery:
+        #标记以指示启用配置服务器发现（配置服务器URL将通过发现查找）
+        enabled: true
+        #读取config-server注册地址
+        service-id: config-server
+      #uri: http://127.0.0.1:8080/
 eureka:
   client:
     service-url:

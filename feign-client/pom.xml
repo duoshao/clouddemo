@@ -11,9 +11,6 @@
 
     <artifactId>feign-client</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>zuul</module>
-    </modules>
     <dependencies>
         <!-- SpringBootWeb组件 -->
         <dependency>
@@ -37,11 +34,19 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
+        <!--SpringCloud整合config-client组件-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!--lombok代码简化工具-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
 </project>
