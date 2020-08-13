@@ -5,6 +5,12 @@ server:
 spring:
   application:
     name: api-user
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    ###采样比例默认的为 0.1可设置介于 0到 1之间，1则表示全部采集
+  sleuth:
+    sampler:
+      probability: 1.0
 eureka:
   client:
     healthcheck:
@@ -22,3 +28,11 @@ eureka:
 #    lease-renewal-interval-in-seconds: 2
     #Eureka注册中心在收到客户端最后一次心跳之后等待的时间上限，单位为秒（默认为90s），超过时间则剔除（客户端会按照此规则向Eureka服务端发送心跳检测包）
 #    lease-expiration-duration-in-seconds: 2
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

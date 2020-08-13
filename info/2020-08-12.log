@@ -1,0 +1,66 @@
+[2020-08-12 22:55:14.249] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5f583b7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-08-12 22:55:14.955] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] The following profiles are active: user1
+[2020-08-12 22:55:15.513] [org.springframework.boot.actuate.endpoint.EndpointId] [main] [131] [WARN ] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-08-12 22:55:15.713] [org.springframework.cloud.context.scope.GenericScope] [main] [295] [INFO ] BeanFactory id=c0ea2c3d-031e-33ea-b3ab-f42d567a9e2e
+[2020-08-12 22:55:15.930] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5f583b7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-08-12 22:55:16.193] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8100 (http)
+[2020-08-12 22:55:16.203] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8100"]
+[2020-08-12 22:55:16.210] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2020-08-12 22:55:16.210] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.22]
+[2020-08-12 22:55:16.396] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2020-08-12 22:55:16.397] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [284] [INFO ] Root WebApplicationContext: initialization completed in 1433 ms
+[2020-08-12 22:55:16.511] [com.netflix.config.sources.URLConfigurationSource] [main] [121] [WARN ] No URLs will be polled as dynamic configuration sources.
+[2020-08-12 22:55:16.511] [com.netflix.config.sources.URLConfigurationSource] [main] [122] [INFO ] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-08-12 22:55:16.519] [com.netflix.config.DynamicPropertyFactory] [main] [281] [INFO ] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@479b5066
+[2020-08-12 22:55:18.044] [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar] [main] [74] [INFO ] Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[2020-08-12 22:55:18.088] [com.netflix.config.sources.URLConfigurationSource] [main] [121] [WARN ] No URLs will be polled as dynamic configuration sources.
+[2020-08-12 22:55:18.088] [com.netflix.config.sources.URLConfigurationSource] [main] [122] [INFO ] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-08-12 22:55:18.322] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2020-08-12 22:55:20.616] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [main] [58] [INFO ] Exposing 20 endpoint(s) beneath base path '/actuator'
+[2020-08-12 22:55:20.774] [org.springframework.cloud.netflix.eureka.InstanceInfoFactory] [main] [72] [INFO ] Setting initial instance status as: STARTING
+[2020-08-12 22:55:20.830] [com.netflix.discovery.DiscoveryClient] [main] [365] [INFO ] Initializing Eureka in region us-east-1
+[2020-08-12 22:55:22.034] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [70] [INFO ] Using JSON encoding codec LegacyJacksonJson
+[2020-08-12 22:55:22.035] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [71] [INFO ] Using JSON decoding codec LegacyJacksonJson
+[2020-08-12 22:55:22.125] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [80] [INFO ] Using XML encoding codec XStreamXml
+[2020-08-12 22:55:22.125] [com.netflix.discovery.provider.DiscoveryJerseyProvider] [main] [81] [INFO ] Using XML decoding codec XStreamXml
+[2020-08-12 22:55:22.280] [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver] [main] [43] [INFO ] Resolving eureka endpoints via configuration
+[2020-08-12 22:55:22.807] [com.netflix.discovery.DiscoveryClient] [main] [976] [INFO ] Disable delta property : false
+[2020-08-12 22:55:22.807] [com.netflix.discovery.DiscoveryClient] [main] [977] [INFO ] Single vip registry refresh property : null
+[2020-08-12 22:55:22.808] [com.netflix.discovery.DiscoveryClient] [main] [978] [INFO ] Force full registry fetch : false
+[2020-08-12 22:55:22.808] [com.netflix.discovery.DiscoveryClient] [main] [979] [INFO ] Application is null : false
+[2020-08-12 22:55:22.808] [com.netflix.discovery.DiscoveryClient] [main] [980] [INFO ] Registered Applications size is zero : true
+[2020-08-12 22:55:22.808] [com.netflix.discovery.DiscoveryClient] [main] [982] [INFO ] Application version is -1: true
+[2020-08-12 22:55:22.808] [com.netflix.discovery.DiscoveryClient] [main] [1065] [INFO ] Getting all instance registry info from the eureka server
+[2020-08-12 22:55:22.958] [com.netflix.discovery.DiscoveryClient] [main] [1074] [INFO ] The response status is 200
+[2020-08-12 22:55:22.961] [com.netflix.discovery.DiscoveryClient] [main] [1288] [INFO ] Starting heartbeat executor: renew interval is: 30
+[2020-08-12 22:55:22.963] [com.netflix.discovery.InstanceInfoReplicator] [main] [60] [INFO ] InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2020-08-12 22:55:22.966] [com.netflix.discovery.DiscoveryClient] [main] [465] [INFO ] Discovery Client initialized at timestamp 1597244122965 with initial instances count: 2
+[2020-08-12 22:55:22.973] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry] [main] [41] [INFO ] Registering application API-USER with eureka with status UP
+[2020-08-12 22:55:22.974] [com.netflix.discovery.DiscoveryClient$3] [main] [1323] [INFO ] Saw local status change event StatusChangeEvent [timestamp=1597244122974, current=UP, previous=STARTING]
+[2020-08-12 22:55:22.974] [com.netflix.discovery.InstanceInfoReplicator] [main] [110] [WARN ] Ignoring onDemand update due to rate limiter
+[2020-08-12 22:55:22.980] [com.netflix.discovery.DiscoveryClient] [DiscoveryClient-InstanceInfoReplicator-0] [844] [INFO ] DiscoveryClient_API-USER/admin-PC:api-user:8100: registering service...
+[2020-08-12 22:55:23.008] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8100"]
+[2020-08-12 22:55:23.018] [com.netflix.discovery.DiscoveryClient] [DiscoveryClient-InstanceInfoReplicator-0] [853] [INFO ] DiscoveryClient_API-USER/admin-PC:api-user:8100 - registration status: 204
+[2020-08-12 22:55:23.036] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [202] [INFO ] Tomcat started on port(s): 8100 (http) with context path ''
+[2020-08-12 22:55:23.037] [org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration] [main] [145] [INFO ] Updating port to 8100
+[2020-08-12 22:55:23.039] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started UserServerApplication in 9.867 seconds (JVM running for 11.255)
+[2020-08-12 22:55:24.892] [org.apache.juli.logging.DirectJDKLog] [RMI TCP Connection(4)-192.168.11.1] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-08-12 22:55:24.892] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(4)-192.168.11.1] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2020-08-12 22:55:24.903] [org.springframework.web.servlet.FrameworkServlet] [RMI TCP Connection(4)-192.168.11.1] [546] [INFO ] Completed initialization in 11 ms
+[2020-08-12 22:56:44.759] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-6] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:56:45.256] [com.netflix.config.ChainedDynamicProperty$ChainLink] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2d119405}] [115] [INFO ] Flipping property: 127.0.0.1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2020-08-12 22:56:45.278] [com.netflix.util.concurrent.ShutdownEnabledTimer] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2d119405}] [58] [INFO ] Shutdown hook installed for: NFLoadBalancer-PingTimer-127.0.0.1
+[2020-08-12 22:56:45.278] [com.netflix.loadbalancer.BaseLoadBalancer] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2d119405}] [197] [INFO ] Client: 127.0.0.1 instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=127.0.0.1,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[2020-08-12 22:56:45.283] [com.netflix.loadbalancer.DynamicServerListLoadBalancer] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2d119405}] [222] [INFO ] Using serverListUpdater PollingServerListUpdater
+[2020-08-12 22:56:45.286] [com.netflix.loadbalancer.DynamicServerListLoadBalancer] [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2d119405}] [150] [INFO ] DynamicServerListLoadBalancer for client 127.0.0.1 initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=127.0.0.1,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@9c95372
+[2020-08-12 22:58:15.936] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-3] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:16.108] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-7] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:16.281] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-2] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:16.442] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-6] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:16.598] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-10] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:16.782] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-1] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:17.216] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-5] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:17.392] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-9] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:17.567] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-4] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:17.735] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-8] [31] [INFO ] 被feigin调用了
+[2020-08-12 22:58:17.918] [com.zantong.bank.controller.UserController] [http-nio-8100-exec-3] [31] [INFO ] 被feigin调用了

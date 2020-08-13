@@ -12,6 +12,7 @@
       <set>
         <option value="$PROJECT_DIR$/erueka-server2/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client/zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin/pom.xml" />
       </set>
     </option>
   </component>

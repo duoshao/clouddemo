@@ -1,5 +1,6 @@
 package com.zantong.bank.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
 
     @Value("${server.port}")
@@ -26,6 +28,7 @@ public class UserController {
 
     @GetMapping(value = "/userName")
     String getOrderInfo(@RequestParam String userName){
+        log.info("被feigin调用了");
         return "获得端口号"+userName+port;
     }
 
